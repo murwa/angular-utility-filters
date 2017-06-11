@@ -8,4 +8,4 @@
                 return typeof input === 'string' ? input.replace(/\+/gm, ' ') : input;
             }
         }]);
-})(angular)
+})(angular);

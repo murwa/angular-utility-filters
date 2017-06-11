@@ -27,7 +27,7 @@
         'angular-utility-filters.search-decode',
         'angular-utility-filters.uc-words',
     ]);
-})(angular)
+})(angular);
 /**
  * @copyright @murwa 2017
  */
@@ -38,7 +38,7 @@
                 return typeof input === 'string' ? input.replace(/\+/gm, ' ') : input;
             }
         }]);
-})(angular)
+})(angular);
 /**
  * @copyright @murwa 2017
  */

@@ -11,4 +11,4 @@
         'angular-utility-filters.search-decode',
         'angular-utility-filters.uc-words',
     ]);
-})(angular)
+})(angular);
