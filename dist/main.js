@@ -46,14 +46,17 @@ angular.module('angular-utility-filters.search-encode', [])
  * @copyright @murwa 2017
  */
 angular.module('angular-utility-filters.str-limit', [])
-    .filter('strLimit', ['$filter', function ($filter) {
-        return function (input, length, ellipse) {
-            if (!input || !angular.isString(input)) {
+    .filter('strLimit', function () {
+        return function (input, length, ellips) {
+            if (!input) {
                 return null;
             }
-            return $filter('limitTo')(angular.copy(input), length) + (input && input.length > length ? (ellipse || '...') : '');
+            if(!angular.isString(input) || !length || input.length <= length){
+                return input;
+            }
+            return input.substring(0, length) + (ellips || '...');
         }
-    }]);
+    });
 /**
  * @copyright @murwa 2017
  */
