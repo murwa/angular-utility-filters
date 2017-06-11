@@ -1,3 +1,6 @@
+/**
+ * @copyright @murwa 2017
+ */
 angular.module('angular-utility-filters.domain', [])
     .filter('domain', [function () {
         return function (input, protocol) {

@@ -1,3 +1,6 @@
+/**
+ * @copyright @murwa 2017
+ */
 angular.module('angular-utility-filters.uc-words', [])
     .filter('ucWords', function () {
         return function (input) {

@@ -1,3 +1,6 @@
+/**
+ * @copyright @murwa 2017
+ */
 angular.module('angular-utility-filters.str-limit', [])
     .filter('strLimit', ['$filter', function ($filter) {
         return function (input, length, ellipse) {
