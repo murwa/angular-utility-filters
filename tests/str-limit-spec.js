@@ -1,6 +1,6 @@
-describe('str-limit module', function(){
-    beforeEach(module('str-limit'));
+describe('angular-utility-filters.str-limit module', function(){
     var $filter;
+    beforeEach(module('angular-utility-filters.str-limit'));
     beforeEach(inject(function(_$filter_){
         $filter = _$filter_;
     }))

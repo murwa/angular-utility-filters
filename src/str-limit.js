@@ -1,4 +1,4 @@
-angular.module('str-limit', [])
+angular.module('angular-utility-filters.str-limit', [])
     .filter('strLimit', ['$filter', function ($filter) {
         return function (input, length, ellipse) {
             if (!input || !angular.isString(input)) {
