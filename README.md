@@ -1,48 +1,29 @@
-[![Build Status](https://travis-ci.org/murwa/ui-router-errors.svg?branch=master)](https://travis-ci.org/murwa/ui-router-errors)
+[![Build Status](https://travis-ci.org/murwa/angular-utility-filters.svg?branch=master)](https://travis-ci.org/murwa/angular-utility-filters)
 
-## UI-Router Errors
+# Angularjs utility filters
 
-An angularjs module to easily handle errors between and on states
+Utility filters for angularjs
 
-### Installation
+## Installation
 
 Bower:
 
 ~~~javascript
-bower install ui-router-errors
+bower install angular-utility-filters
 ~~~
 
 In your page, add:
 
 ~~~html
-<script src="bower_components/ui-router-errors/dist/ui-router-errors.min.js"></script>
+<script src="bower_components/angular-utility-filters/dist/angular-utility-filters.min.js"></script>
 ~~~
 
-### Usage
+## Usage
 
-#### Load module
+### Load module
 
 Add the module as a dependency to your app:
 
 ~~~javascript
-var app = angular.module('app', ['ui-router-errors']
-~~~
-
-#### State Definition
-
-##### Easiest
-
-Simply add your error state like so:
-
-~~~javascript
-    var state = {
-        name: 'errors',
-        template: 'Error occured',
-        controller: ['$errors', function($errors){
-            var self = this;
-            angular.extend(self, $errors);
-
-            // Access get methods in your template
-        }]
-    }
+var app = angular.module('app', ['angular-utility-filters']
 ~~~
