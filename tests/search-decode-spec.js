@@ -1,11 +1,11 @@
-describe('angular-utility-filters.search-encode module', function(){
+describe('angular-utility-filters.search-decode module', function(){
     var $filter;
     beforeEach(module('angular-utility-filters.search-decode'));
     beforeEach(inject(function(_$filter_){
         $filter = _$filter_;
     }));
-    it('should replace white space with a plus sign', function(){
-        var input = 'a+fly';
-        expect($filter('searchDecode')(input)).toBe('a fly');
+    it('should replace unwanted characters with whitespace', function(){
+        var input = 'a+fly-is-smilling,happily';
+        expect($filter('searchDecode')(input)).toBe('a fly is smilling happily');
     });
 });
